@@ -67,13 +67,6 @@
 .tablesaw-bar .btn:focus {
 	box-shadow: 0 0 .35em var(button-interaction-shadow) !important;
 }
-.ie-lte8 .tablesaw-bar .btn:hover,
-.ie-lte8 .tablesaw-bar .btn:focus {
-	color: var(button-interaction-text);
-	background-color: #fff;
-	border-color: #aaa;
-	outline: none;
-}
 
 .tablesaw-bar .btn-select select {
 	background: none;
@@ -106,9 +99,6 @@
 	min-width: 7.25em;
 	text-align: left;
 	text-indent: 0;
-}
-.ie-lte8 .tablesaw-bar .btn-select {
-	min-width: 6.1em;
 }
 .tablesaw-bar .btn.btn-small,
 .tablesaw-bar .btn.btn-micro {
@@ -174,10 +164,6 @@
 }
 
 /* Column navigation buttons for swipe and columntoggle tables */
-.tablesaw-bar .tablesaw-advance {
-	position: relative;
-	top: -2.6em;
-}
 .tablesaw-advance .btn {
 	-webkit-appearance: none;
 	-moz-appearance: none;
@@ -248,14 +234,9 @@
 	clear: both;
 	font-family: sans-serif;
 }
-.tablesaw-bar.mode-swipe,
-.tablesaw-bar.mode-columntoggle {
-	margin-top: -2em;
-	position: relative;
-	top: 2em;
-}
 .tablesaw-toolbar {
 	font-size: .875em;
+	float: left;
 }
 .tablesaw-toolbar label {
 	padding: .5em 0;
@@ -313,19 +294,5 @@
 		width: auto;
 		position: static;
 		overflow: visible;
-	}
-}
-@media (min-width: 40em) {
-	.tablesaw-bar.mode-swipe,
-	.tablesaw-bar.mode-columntoggle {
-		margin-top: 0;
-		top: 0;
-	}
-	.tablesaw-bar .tablesaw-advance {
-		position: static;
-	}
-	.tablesaw-bar {
-		margin-top: 0;
-		position: static;
 	}
 }

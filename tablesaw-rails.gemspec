@@ -4,7 +4,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 
 Gem::Specification.new do |spec|
   spec.name          = "tablesaw-rails"
-  spec.version       = "0.0.1"
+  spec.version       = "0.0.2"
   spec.authors       = ["Robbie Marcelo"]
   spec.email         = ["rbmrclo@hotmail.com"]
   spec.summary       = %q{A set of jQuery plugins for responsive tables.}
