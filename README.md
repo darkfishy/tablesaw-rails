@@ -8,7 +8,7 @@ Just a ruby gem for asset pipeline which includes the [tablesaw][tablesaw] libra
 
 Add this line to your application's Gemfile:
 
-    gem 'tablesaw-rails'
+    gem 'tablesaw-rails', :git => 'git://github.com/darkfishy/tablesaw-rails.git'
 
 And then execute:
 
@@ -23,12 +23,15 @@ Or install it yourself as:
 In your `application.js`:
 
 ```javascript
-//= require tablesaw/tables
+
+//= require tablesaw/tablesaw-init
+//= require tablesaw/tablesaw
+//= require tablesaw/tables.custom
 ```
 
 Also, in your `application.css`:
 ```css
-*= require tablesaw/tables
+*= require tablesaw/tables.bare
 ```
 
 ## Customization
